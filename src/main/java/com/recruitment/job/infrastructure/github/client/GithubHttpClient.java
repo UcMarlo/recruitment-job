@@ -1,6 +1,6 @@
-package com.recruitment.job.github;
+package com.recruitment.job.infrastructure.github.client;
 
-import com.recruitment.job.github.dto.GithubUserResponseDto;
+import com.recruitment.job.infrastructure.github.client.dto.GithubUserResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;

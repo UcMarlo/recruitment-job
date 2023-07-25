@@ -7,7 +7,7 @@ databaseChangeLog:
             tableName: resource_request_count
             columns:
               - column:
-                  name: title
+                  name: login
                   type: VARCHAR(50)
               - column:
                   name: request_count

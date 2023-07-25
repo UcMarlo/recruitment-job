@@ -1,8 +1,9 @@
-package com.recruitment.job.github;
+package com.recruitment.job.infrastructure.github;
 
-import com.recruitment.job.domain.User;
-import com.recruitment.job.domain.repositories.ports.UserRepository;
-import com.recruitment.job.github.dto.GithubUserResponseDto;
+import com.recruitment.job.domain.user.User;
+import com.recruitment.job.domain.user.port.UserRepository;
+import com.recruitment.job.infrastructure.github.client.GithubHttpClient;
+import com.recruitment.job.infrastructure.github.client.dto.GithubUserResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 

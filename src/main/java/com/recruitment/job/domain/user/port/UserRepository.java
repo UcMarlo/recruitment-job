@@ -1,6 +1,6 @@
-package com.recruitment.job.domain.repositories.ports;
+package com.recruitment.job.domain.user.port;
 
-import com.recruitment.job.domain.User;
+import com.recruitment.job.domain.user.User;
 
 import java.util.Optional;
 

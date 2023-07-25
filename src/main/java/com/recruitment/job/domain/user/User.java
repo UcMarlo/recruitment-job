@@ -1,4 +1,4 @@
-package com.recruitment.job.domain;
+package com.recruitment.job.domain.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -8,7 +8,7 @@ import java.time.ZonedDateTime;
 @AllArgsConstructor
 @Getter
 public class User {
-    int id;
+    Long id;
     String login;
     String name;
     String type;

@@ -1,9 +1,0 @@
-package com.recruitment.job.domain.repositories.ports;
-
-import com.recruitment.job.domain.ResourceRequestCount;
-
-import java.util.Optional;
-
-public interface ResourceRequestCountRepository<ResourceRequestCount, String> {
-    Optional<ResourceRequestCount> findFirstByLogin(String login);
-}

@@ -1,9 +1,8 @@
-package com.recruitment.job.github.dto;
+package com.recruitment.job.infrastructure.github.client.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Value;
 
 import java.time.ZonedDateTime;
 
@@ -12,7 +11,7 @@ import java.time.ZonedDateTime;
 @AllArgsConstructor
 public class GithubUserResponseDto {
     private String login;
-    private int id;
+    private Long id;
     private String node_id;
     private String avatar_url;
     private String gravatar_id;

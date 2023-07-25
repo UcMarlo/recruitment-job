@@ -1,4 +1,4 @@
-package com.recruitment.job.domain;
+package com.recruitment.job.domain.request;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -19,7 +19,7 @@ public class ResourceRequestCount {
     }
 
     public void increaseCounter(){
-        requestCount = requestCount.add(BigInteger.ONE);
+        this.requestCount = this.requestCount.add(BigInteger.ONE);
     }
 
     public String getLogin() {

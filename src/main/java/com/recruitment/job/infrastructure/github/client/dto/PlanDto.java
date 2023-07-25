@@ -1,4 +1,4 @@
-package com.recruitment.job.github.dto;
+package com.recruitment.job.infrastructure.github.client.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

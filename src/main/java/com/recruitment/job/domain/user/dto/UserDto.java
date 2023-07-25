@@ -1,12 +1,13 @@
-package com.recruitment.job.api.dto;
+package com.recruitment.job.domain.user.dto;
 
 import lombok.Value;
 
 import java.math.BigDecimal;
 import java.time.ZonedDateTime;
 
+
 @Value
-public class UserMetadataDto {
+public class UserDto {
     Long id;
     String login;
     String name;
