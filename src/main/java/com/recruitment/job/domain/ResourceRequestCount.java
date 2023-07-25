@@ -8,12 +8,12 @@ import java.math.BigInteger;
 
 @Entity
 @NoArgsConstructor
-public class ViewCount {
+public class ResourceRequestCount {
     @Id
     private String login;
     private BigInteger requestCount;
 
-    public ViewCount(String login) {
+    public ResourceRequestCount(String login) {
         this.login = login;
         requestCount = BigInteger.ZERO;
     }
