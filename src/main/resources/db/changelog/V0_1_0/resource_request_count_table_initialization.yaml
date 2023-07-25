@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: resourceRequestCountTableInitialization
+      author: AdamW
+      changes:
+        - createTable:
+            tableName: resource_request_count
+            columns:
+              - column:
+                  name: title
+                  type: VARCHAR(50)
+              - column:
+                  name: request_count
+                  type: BIGINT

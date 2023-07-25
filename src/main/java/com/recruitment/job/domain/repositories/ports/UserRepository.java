@@ -1,9 +1,9 @@
 package com.recruitment.job.domain.repositories.ports;
 
-import com.recruitment.job.domain.UserDto;
+import com.recruitment.job.domain.User;
 
 import java.util.Optional;
 
 public interface UserRepository {
-    Optional<UserDto> findUserByLogin(String login);
+    Optional<User> findUserByLogin(String login);
 }

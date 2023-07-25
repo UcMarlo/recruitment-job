@@ -5,7 +5,6 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-
-public interface ResourceRequestCountJakartaRepository extends ResourceRequestCountRepository, CrudRepository<String, ResourceRequestCount> {
+public interface ResourceRequestCountJakartaRepository extends ResourceRequestCountRepository, CrudRepository<ResourceRequestCount, String> {
 
 }
