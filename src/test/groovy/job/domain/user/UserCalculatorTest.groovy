@@ -7,7 +7,7 @@ class UserCalculatorTest extends Specification {
 
     UserCalculator userCalculator = new UserCalculator()
 
-    def "user calculator should return the correct calculation result"() {
+    def "should return the correct calculation result"() {
         expect:
         userCalculator.performCalculations(a, b).get() == expectedResult
 
