@@ -1,6 +1,5 @@
-package job.domain.user
+package com.recruitment.job.domain.user
 
-import com.recruitment.job.domain.user.UserCalculator
 import spock.lang.Specification
 
 class UserCalculatorTest extends Specification {

@@ -14,7 +14,7 @@ public class UserService {
 
     public UserDto findUser(String login){
         User user = userRepository.findUserByLogin(login)
-                .orElseThrow(ResourceNotFoundException::new);
+                .orElseThrow(()-> new ResourceNotFoundException("Cannot find user for login: " + login));
 
         return new UserDto(
                 user.getId(),
@@ -23,7 +23,7 @@ public class UserService {
                 user.getType(),
                 user.getAvatarUri(),
                 user.getCreatedAt(),
-                userCalculator.performCalculations(user.followers_count, user.publicRepositoriesCount).orElse(null)
+                userCalculator.performCalculations(user.getFollowers_count(), user.getPublicRepositoriesCount()).orElse(null)
         );
     }
 
