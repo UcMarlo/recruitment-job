@@ -1,5 +1,6 @@
 package com.recruitment.job.infrastructure.github.client.dto;
 
+import com.recruitment.job.domain.user.User;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -49,4 +50,19 @@ public class GithubUserResponseDto {
     private int collaborators;
     private boolean two_factor_authentication;
     private PlanDto plan;
+
+    public User toDomainObject() {
+        return new User(
+                this.id,
+                this.login,
+                this.name,
+                this.type,
+                this.avatar_url,
+                this.created_at,
+                this.followers,
+                this.public_repos,
+                null
+        );
+    }
+
 }

@@ -4,11 +4,19 @@ databaseChangeLog:
       author: AdamW
       changes:
         - createTable:
-            tableName: resource_request_count
+            tableName: request_counter
             columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
               - column:
                   name: login
                   type: VARCHAR(50)
+                  constraints:
+                    unique: true
               - column:
                   name: request_count
                   type: BIGINT

@@ -8,4 +8,4 @@ spring:
     password:
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
-github.api.url: localhost:8080/mock
+github.api.url: localhost:8081/github/mock

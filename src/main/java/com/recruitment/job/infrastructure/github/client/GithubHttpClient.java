@@ -9,7 +9,9 @@ import org.springframework.web.reactive.function.client.WebClient;
 @Component
 @RequiredArgsConstructor
 public class GithubHttpClient {
-    private final String USERS_SUFFIX = "/users/{login}";
+
+    private static final String USERS_SUFFIX = "/users/{login}";
+
     private final WebClient githubWebClient;
 
     public GithubUserResponseDto getUserByLogin(String login){

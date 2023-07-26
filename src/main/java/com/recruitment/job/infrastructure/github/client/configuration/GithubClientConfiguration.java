@@ -1,4 +1,4 @@
-package com.recruitment.job.infrastructure.github.client;
+package com.recruitment.job.infrastructure.github.client.configuration;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
