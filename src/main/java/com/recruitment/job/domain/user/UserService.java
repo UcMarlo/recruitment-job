@@ -23,7 +23,7 @@ public class UserService {
                 user.getType(),
                 user.getAvatarUri(),
                 user.getCreatedAt(),
-                userCalculator.performCalculations(user.followers_count, user.followers_count).orElse(null)
+                userCalculator.performCalculations(user.followers_count, user.publicRepositoriesCount).orElse(null)
         );
     }
 
