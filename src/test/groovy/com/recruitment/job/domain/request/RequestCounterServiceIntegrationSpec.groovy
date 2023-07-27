@@ -5,9 +5,11 @@ import com.recruitment.job.infrastructure.postgres.counter.RequestCounterPersist
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.context.annotation.Import
+import org.springframework.test.context.ActiveProfiles
 import spock.lang.Specification
 
 @SpringBootTest
+@ActiveProfiles("test")
 @Import(value = [RequestCounterService.class, RequestCounterPersistenceServiceAdapter.class])
 class RequestCounterServiceIntegrationSpec extends Specification {
 
