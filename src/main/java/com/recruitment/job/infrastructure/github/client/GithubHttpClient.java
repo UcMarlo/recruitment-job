@@ -14,7 +14,7 @@ public class GithubHttpClient {
 
     private final WebClient githubWebClient;
 
-    public GithubUserResponseDto getUserByLogin(String login){
+    public GithubUserResponseDto getUserByLogin(String login) {
         return githubWebClient.get()
                 .uri(USERS_SUFFIX, login)
                 .retrieve()

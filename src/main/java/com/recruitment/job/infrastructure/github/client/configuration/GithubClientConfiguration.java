@@ -9,7 +9,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 public class GithubClientConfiguration {
 
     @Bean
-    public WebClient githubWebClient(@Value("${github.api.url}") String githubApiUrl){
+    public WebClient githubWebClient(@Value("${github.api.url}") String githubApiUrl) {
         return WebClient.create(githubApiUrl);
     }
 

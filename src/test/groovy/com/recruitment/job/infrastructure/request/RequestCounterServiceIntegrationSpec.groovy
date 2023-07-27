@@ -1,5 +1,6 @@
-package com.recruitment.job.domain.request
+package com.recruitment.job.infrastructure.request
 
+import com.recruitment.job.domain.request.RequestCounter
 import com.recruitment.job.domain.request.service.RequestCounterService
 import com.recruitment.job.infrastructure.postgres.counter.RequestCounterPersistenceServiceAdapter
 import org.springframework.beans.factory.annotation.Autowired
@@ -19,7 +20,7 @@ class RequestCounterServiceIntegrationSpec extends Specification {
     @Autowired
     private RequestCounterPersistenceServiceAdapter requestCounterPersistenceServiceAdapter;
 
-    def "should save new element and increment counter"(){
+    def "should save new element and increment counter"() {
         given:
         def firstTimeOccurringLogin = "firstTimeOccurringLogin"
 
@@ -33,7 +34,7 @@ class RequestCounterServiceIntegrationSpec extends Specification {
         requestCounter.get().getRequestCount() == BigInteger.ONE
     }
 
-    def "should increment existing login"(){
+    def "should increment existing login"() {
         given:
         def alreadyExistingLogin = "existing_login"
         def resource = new RequestCounter(alreadyExistingLogin)

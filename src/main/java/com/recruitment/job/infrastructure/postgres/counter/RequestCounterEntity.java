@@ -30,11 +30,11 @@ public class RequestCounterEntity {
         return requestCount;
     }
 
-    public void updateEntity(RequestCounter requestCounter){
+    public void updateEntity(RequestCounter requestCounter) {
         this.requestCount = requestCounter.getRequestCount();
     }
 
-    public RequestCounter toDomainObject(){
+    public RequestCounter toDomainObject() {
         return new RequestCounter(this.login, this.requestCount);
     }
 }

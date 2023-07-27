@@ -3,7 +3,6 @@ package com.recruitment.job.infrastructure.github.client.dto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Value;
 
 @Getter
 @NoArgsConstructor

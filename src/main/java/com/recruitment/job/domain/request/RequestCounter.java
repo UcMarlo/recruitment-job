@@ -17,7 +17,7 @@ public class RequestCounter {
         this.requestCount = BigInteger.ONE;
     }
 
-    public static RequestCounter newRequestCounter(String login){
+    public static RequestCounter newRequestCounter(String login) {
         return new RequestCounter(login);
     }
 
