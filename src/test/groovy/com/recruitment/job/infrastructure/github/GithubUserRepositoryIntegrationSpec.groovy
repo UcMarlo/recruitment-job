@@ -110,8 +110,6 @@ class GithubUserRepositoryIntegrationSpec extends Specification {
         thrown UserNotFoundException
     }
 
-    // TODO test for error
-
     static final def GITHUB_NOT_FOUND_RESPONSE = """
         {
           "message": "Not Found",
