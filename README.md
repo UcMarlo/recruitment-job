@@ -1,3 +1,16 @@
+# How to run the application
+simply run:
+
+```docker-compose up```
+
+```./gradlew bootRun```
+
+# Documentation:
+Swagger is available under:
+
+```http://localhost:8080/swagger-ui/index.html```
+
+
 # **Zadanie rekrutacyjne backend**
 
 ### Stwórz RESTowy serwis, który zwróci informacje:
